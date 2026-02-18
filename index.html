@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Beth+Ellen">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+  }
+  background-color: #FAFAFA;
+  width: 100%;
+			}
+
+			p {
+				font-family: 'Archivo Narrow'; serif;
+        			font-size: 30px;
+				color: #565656;
+				padding: 10px 5px;
+		
+			
+			}
+
+			#secondtitle{
+				text-align: center;
+				font-family: 'Beth Ellen', serif;
+        			font-size: 90px;
+				text-shadow: 9px 9px 9px #bbb;
+				font-weight: 700;
+				color: #565656;
+				position: relative;
+				margin-top: 200px;
+				
+				
+			}
+
+			#thirdheader {
+				font-family:'Archivo Narrow', serif;
+				font-size: 32px;
+				font-weight: 700;
+				text-align: center;
+				color: #565656;
+				position: relative;
+
+				
+			}
+			#fourthbody {
+				text-align: center;
+				color: #565656;
+				font-size: 25px;
+				font-family:'Archivo Narrow', serif;
+				padding: 15px;
+				margin: 50px;
+				margin-top: 15px;
+                                margin-bottom: -15px;
+				position: relative;
+
+			}
+			#fifth {
+				font-family:'Archivo Narrow', serif;
+				font-size: 30px;
+				text-align: center;
+				color: #565656;
+			}
+			.image-container {
+				position: relative;
+				display: inline-block;
+			}
+  
+			.image-container img {
+				display: block;
+				width: 100%;
+				height: 50%;
+			}
+  
+			.overlay-text {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%); 
+				color: #565656; 
+				padding: 5px 5px; 
+				text-align: center;
+								
+			}
+			#contentAreaAboutme {
+				
+         			margin: auto;
+  				width: 20%;
+  				margin-top: 20px;
+  				padding: 10px;  
+				display: flex;
+  				justify-content: center;
+				position: relative;
+
+				
+				
+        		}
+			#contentArea2 {
+         			margin: auto;
+  				width: 50%;
+				padding: 10px;  
+				
+				display: flex;
+				justify-content: center;
+				position: relative;
+
+        		}
+			#contentAreaProjecttitle {
+         			height: 150px;
+         			width: 400px;
+         			position: relative;
+         			margin: auto;
+				display: flex;
+  				justify-content: center;
+				position: relative;
+
+        		}
+			p.redborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE1E7;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin: auto;
+  				width: 50%;
+				
+			}
+			p.orangeborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE3D3;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin: auto;
+  				width: 50%;		
+			}
+			p.blueborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DAE1EB;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			p.greenborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DDEBCF;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			p.purpleborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #E0DEEB;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			#storymapsettings {
+				
+  	    			width: 60%;
+        			position: relative;
+        			margin: auto;
+				display: flex;
+  				justify-content: center;
+				padding: 60px;
+				
+			}
+			a:link, a:visited {
+				padding: 20px;
+ 				color: #E1E1E1;
+  				font-family: 'Archivo Narrow'; serif;			
+  				font-size: 15px;
+			
+			}
+			#storymaplink {
+				
+				width: 100%;
+        			position: relative;
+        			
+				display: flex;
+  				justify-content: center;
+				
+
+			}
+}
+
+</style>
+</head>
+<body>
+<div class="image-container">
+            <img src="bannerfilter.jpg" alt="image">
+            <div class="overlay-text">
+	    	<p id="secondtitle">Sarah Roach</p>
+  		<p id="thirdheader">Cartographer & GIS Professional</p>
+		    
+		</div>
+	
+		<div id="contentAreaAboutme">
+             <p class="redborder" id="thirdheader">About Me</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">
+Using GIS, I specialize in the art and science of cartography, crafting visually appealing and professionally polished maps with a focus on readability. I believe in the transformative power of maps to convey complex information effectively, maximizing their impact on diverse audiences. Poorly designed maps can compromise the credibility of underlying data, regardless of its nature or collection method. I am dedicated to refining my skills and staying at the forefront of GIS technology, experimenting with innovative design techniques, exploring new data visualization approaches, and incorporating user feedback to enhance map usability. My commitment is to deliver maps that not only convey information but also tell compelling stories in a visually pleasing way. Navigating the dynamic GIS landscape, I'm driven by a passion for creating maps that transcend mere visuals, leaving a lasting impact on those who engage with them.
+</p>
+		</div>
+<div id="contentArea2">
+             <p class="orangeborder" id="thirdheader">UK Senior Capstone Project/ESRI Map Book, 2022</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">For my undergraduate Geography senior capstone project at the University of Kentucky, I wanted to pull from my personal experiences growing up in South Louisville near heavy industry. As a kid, I would walk to the bus stop in the morning and sometimes smell the uniquely weird odor from the next-door factories. I wondered what the source was, and what could it possibly be doing to the health of my neighborhood. Using data from the EPA, CDC, and Census Bureau, I explored the connection between historical demographic, economic, and housing patterns, like redlining in Louisville's west end neighborhoods, and the proximity to polluting facilities. By using a bivariate classification scheme, I was able to show multiple critical data sets and types simultaneously, illuminating the complex web of factors contributing to environmental injustice and health disparities in Louisville's marginalized communities. In 2022, I attended the ESRI User Conference in San Diego through my job at the Fayette County Property Valuation Administration. I submitted this project, and it was selected to be used in ESRI's 2023 Map Book (Volume 3B). Through projects like these, my goal is to bridge the gap between data and understanding, presenting crucial issues like environmental injustice in a visually compelling, easily digestible, and attractive manner.</p>
+		</div>
+
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="MAPBOOK v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ASTHMACOPD.PNG" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="BLACKPOVERTY.PNG" style="width:100%">
+  </div>
+
+<div class="mySlides1">
+    <img src="LIFEEXPECTANCY.PNG" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/MAPBOOK%20v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/ASTHMACOPD.PNG">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/BLACKPOVERTY.PNG">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/LIFEEXPECTANCY.PNG">Slide 4</a>
+
+		
+    		</div>
+<div id="contentArea2">
+             <p class="blueborder" id="thirdheader">PVA Field Map for Assessors, 2023</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">Upon joining the Property Valuation Administrator's office in 2021, I identified an opportunity to enhance the efficiency and accuracy of field mapping processes. The existing field map, with only three layers—parcels, roads, and building outlines—provided a limited representation of the real-world environment. With their limited resources out of the office, I wanted to make a field map that more accurately reflected what was on-the-ground and provide much needed context to assessors. I used map layers from the Lexington-Fayette Urban County Government (LFUCG), University of Kentucky, KYGEONET, and Openstreetmap, as well as creating/updating layers using aerial imagery when possible. Originally, the parcel layer would only get updated a few times a year and had to be created from scratch every time. Through a redesign of the workflow, the tablet maps are now updated twice a month or as needed, and the completed basemap map document is now accessible on a shared space on the network, ready to be edited. This transformation in the field mapping process not only increased the accuracy of assessments but also significantly improved operational efficiency. The implementation of a more dynamic and regularly updated field map has proven instrumental in eliminating the challenges previously faced, ensuring that assessors have the most current and relevant information at their fingertips. My commitment to optimizing GIS workflows extends beyond creating visually compelling maps to addressing practical challenges within the organization, facilitating a seamless integration of GIS technology into daily operations.</p>
+		</div>
+<div class="slideshow-container">
+	<img src="Media1-Trim-ezgif.com-video-to-gif-converter.gif" style="width:50%; margin-left: 250px;">
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="tablet1-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="tablet2-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="tablet3-01.png" style="width:100%">
+  </div>
+	
+<div class="mySlides2">
+    <img src="tabletscale_1k.png" style="width:100%">
+  </div>
+	
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet1-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet2-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet3-01.png">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/tabletscale_1k.png">Slide 4</a>
+
+</div>
+<div id="contentArea2">
+             <p class="greenborder" id="thirdheader">PVA Assessor NBHD Maps, 2023</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">These maps were specifically designed for internal use among the Property Valuation Administrator's (PVA) property assessors, offering them a powerful tool during the demanding assessment season. Recognizing the assessors' need for a more comprehensive understanding of the neighborhoods and individual parcels they were assigned to; I created these maps to act as a reference tool. The maps not only feature fundamental layers like FEMA floodplains and recent parcel sales and their types, but also feature layers such as religious exemption parcels, water bodies, parks, golf courses, cemeteries, and schools. This holistic approach provides assessors with a nuanced perspective of their assigned areas, providing them with essential contextual information crucial for accurate property appraisals. In the ever-evolving housing market, these maps play a pivotal role in enabling assessors to make informed decisions, ultimately minimizing the likelihood of assessment protests in the future. The enhanced understanding of a neighborhood dynamics and how that relates to individual parcel valuation facilitates more accurate and defensible appraisals, contributing to the overall efficiency and effectiveness of the PVA's operations. As a GIS professional, I am dedicated to creating solutions that directly address the unique needs of users, making their day-to-day responsibilities easier.  </p>
+		</div>	
+	<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="nbhd71-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="nbhd134-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="nbhd188-01.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd71-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd134-01-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd188-01.png">Slide 3</a>
+
+		
+</div> 
+
+<div id="contentArea2">
+             <p class="purpleborder" id="thirdheader">UK Mapping Racial Violence in Kentucky Storymap Timeline, 2022</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">In this project, I created an interactive timeline documenting lynchings in Kentucky using ArcGIS StoryMaps. Collaborating with dedicated peers and esteemed professors from the geography and history departments at the University of Kentucky, we conducted thorough research from historical sources like newspapers, census records, and books. My role involved transforming and organizing this important research into a timeline with maps to provide additional context. The timeline features comprehensive descriptions accompanied by historical images and compelling choropleth maps illustrating the number of lynchings, their distribution by decade, percentage of Black residents in each county, and the location of sundown towns overlaid on top. For future students furthering this project, I authored an instruction document outlining symbology information and providing guidance on effectively utilizing ArcGIS StoryMaps for future reference by students. Upon the initial release at the end of the Spring 2022 semester, the project received positive feedback, affirming its impact on viewers. They appreciated the interactive map features and the well-organized wealth of information. This project underscores my dedication to utilizing GIS to shed light on important topics and employing diverse mapping techniques to effectively communicate impactful messages.
+</p>
+		</div>
+	<div id="storymapsettings">
+	<iframe src="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857" width="100%" height="450px" frameborder="10" allowfullscreen allow="geolocation"></iframe>
+		</div>
+	<div id="storymaplink">
+	<a href="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857">Full Link</a>
+		</div>
+</div>
+<div id="contentArea2">
+             <p class="greenborder" id="thirdheader">Smiley Pete's 'The State of Local Real Estate 2023: By the Numbers', 2023</p> 
+         
+		</div>
+	<div	
+	<p id="fourthbody">This was a mapping project between the PVA and SmileyPete, a local Lexington KY magazine, for their annual real estate edition. Unlike previous years, where maps only included two layers, parcel sales and roads, I created detailed maps that paint a holistic picture of each neighborhood. These maps include essential data like schools, parks, universities, and more, giving a well-rounded view of each area. The goal was to make these maps user-friendly, allowing residents to easily spot their own neighborhood by recognizing familiar areas and features. By mapping sales statistics for six key neighborhoods, highlighting trends and emerging patterns, the aim is to give SmileyPete's readers a clear insight into the changing real estate scene in some of the city's most popular neighborhoods. Through this project, we want to offer more than just surface-level info, providing a simple yet comprehensive visual guide. These maps are tools for readers; they're a way to understand the dynamic nature of our city's neighborhoods in a straightforward manner.</p>
+		</div>	
+	<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="beaumont-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="downtown-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="waterford-01.png" style="width:100%">
+  </div>
+		
+<div class="mySlides4">
+    <img src="lansdowne-01.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/beaumont-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/downtown-01-01.png">Slide 2</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/waterford-01.png">Slide 3</a>
+			
+		<a href="https://sarahroach20.github.io/gisportfolio/lansdowne-01.png">Slide 4</a>
+</div> 
+
+		</div>
+	</div>
+	
+	<div id="contentAreaAboutme">
+        <p class="orangeborder" id="thirdheader">UK Mapshop</p> 
+        </div>
+	<div
+	<p id="fourthbody">In this project, I worked with the University of Kentucky’s Mapshop. I collaborated and consulted with faculty, geography department heads, and graduate students on transforming data from the Lexington Fair Housing Council. This data included survey responses on the likelihood of eviction within the coming month. This needed careful cleaning and organization, as it included names, addresses, phone numbers, and emails. I transformed this raw information into a usable format and visible product. The outcome was a series of bivariate maps exploring the relationship between eviction rates and demographic factors. Using Census Bureau and American Community Survey (ACS) data, I created maps revealing correlations with income, single mother households, and race. This visual approach highlighted disparities in eviction rates across different socio-economic and demographic groups. This project, grounded in real-world challenges, demonstrated my ability to navigate complex datasets, maintain data integrity, and communicate nuanced findings through visually compelling maps. It strengthened my commitment to using GIS as a powerful tool for addressing social issues and contributing valuable insights to academic research.
+ </p>
+      		</div>
+	</div>
+	<div class="slideshow-container">
+        <div class="mySlides5">
+        <img src="evictionrateblackpoplogo-01.png" id="border" style="width:100%">
+      		</div>
+        <div class="mySlides5">
+        <img src="evictionrateffhlogo-01.png" id="border" style="width:100%">
+      		</div>
+        <div class="mySlides5">
+        <img src="evictionratehispanicpoplogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionratemaplogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionratenonwhitelogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionrateunder50klogo-01.png" id="border" style="width:100%">
+      		</div>	
+      <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+		</div>
+
+		<div id="storymaplink">
+			
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateblackpoplogo-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateffhlogo-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratehispanicpoplogo-01.png">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratemaplogo-01.png">Slide 4</a>  
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratenonwhitelogo-01.png">Slide 5</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateunder50klogo-01.png">Slide 6</a>
+		
+    		</div>	
+	<div>
+		<div id="first">
+		
+		<div id="storymaplink">
+		<a href="https://github.com/sarahroach20/gisportfolio">HTML Webpage by Sarah Roach using GitHub Pages</a>
+			</div>
+	
+</div>
+	</div>
+<script>
+let slideIndex = [1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5" ]
+showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
+
