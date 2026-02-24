@@ -9,6 +9,14 @@
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -94,31 +102,14 @@ img {vertical-align: middle;}
 				color: #565656;
 			}
 			.image-container {
-  			  height: 100vh; /* Full viewport height */
-			  background-image: url("IMG_0489.jpg"); /* Hero image */
-  			  background-size: cover;
-			  background-position: center;
-			  background-attachment: fixed; /* Parallax effect */
-			  position: relative;
-			  display: flex;
-			  justify-content: center;
-			  align-items: center;
+				position: relative;
+				display: inline-block;
 			}
-
-			.image-container::before {
-			  content: "";
-			  position: absolute;
-			  inset: 0;
-			  background: rgba(0,0,0,0.35); /* optional dark overlay for text */
-			  z-index: 0;
-			}
-
-			.overlay-text {
-			  position: relative;
-			  z-index: 1;
-			  text-align: center;
-			  color: white;
-			  padding: 0 20px;
+  
+			.image-container img {
+				display: block;
+				width: 100%;
+				height: 25%;
 			}
   
 			.overlay-text {
@@ -250,11 +241,12 @@ img {vertical-align: middle;}
 </head>
 <body>
 <div class="image-container">
-    <div class="overlay-text">
-        <p id="secondtitle">Finn Haight</p>
-        <p id="thirdheader">GIS Professional and Data Analyst</p>
-    </div>
-</div>
+            <img src="IMG_0489.jpg" alt="image">
+            <div class="overlay-text">
+	    	<p id="secondtitle">Finn Haight</p>
+  		<p id="thirdheader">GIS Professional and Data Analyst</p>
+		    
+		</div>
 	
 		<div id="contentAreaAboutme">
              <p class="redborder" id="thirdheader">About Me</p> 
@@ -530,9 +522,6 @@ function showSlides(n, no) {
 
 </body>
 </html> 
-
-
-
 
 
 
