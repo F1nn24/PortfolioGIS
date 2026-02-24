@@ -9,6 +9,34 @@
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 img {vertical-align: middle;}
 
+.image-container {
+  height: 100vh; /* Full viewport height */
+  background-image: url("IMG_0489.jpg"); /* Hero image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* optional dark overlay for text */
+  z-index: 0;
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -521,6 +549,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
