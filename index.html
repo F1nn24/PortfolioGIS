@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,34 +104,37 @@ img {vertical-align: middle;}
 			}
 			.image-container {
 				position: relative;
-				display: inline-block;
+			    width: 100%;
+			    height: 50vh;
+			    overflow: hidden;
 			}
-  
 			.image-container img {
-				display: block;
-				width: 100%;
-				height: 25%
+			    width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			    display: block;
+			    position: relative;
+			    z-index: 1;
 			}
 	
 		  .image-container::after {
-			    content: "";
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    width: 100%;
-			    height: 32.5%;
-			    background: rgba(0, 0, 0, 0.35);  /* darkness level */
+ 			   content: "";
+  			   position: absolute;
+		       top: 0;
+		       left: 0;
+	           width: 100%;
+		       height: 100%;
+		       background: rgba(0, 0, 0, 0.45);
+		       z-index: 2;
 			}
-	
-			.overlay-text {
-				position: absolute;
-				top: 13%;
-				left: 50%;
-				transform: translate(-50%, -50%); 
-				color: #E6E6E6; 
-				padding: 5px 5px; 
-				text-align: center;
-								
+		.overlay-text {
+ 			   position: absolute;
+		       top: 50%;
+		       left: 50%;
+		       transform: translate(-50%, -50%);
+		       color: white;
+		       text-align: center;
+		       z-index: 3;  /* THIS is the key */					
 			}
 			#contentAreaAboutme {
 				
@@ -533,6 +536,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
