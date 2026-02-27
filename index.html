@@ -9,15 +9,8 @@
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 40px auto;
-}
-	
-/* Next & previous buttons */
-.prev, .next {
+.slideshow-container .prev,
+.slideshow-container .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -27,26 +20,28 @@ img {vertical-align: middle;}
   color: black;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 0.3s ease;
+  border-radius: 3px;
   user-select: none;
-  
+  background-color: rgba(255,255,255,0.7); /* semi-transparent background */
+  z-index: 10; /* ensures buttons are above the images */
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+/* Left/Right positioning */
+.slideshow-container .prev { left: 10px; }
+.slideshow-container .next { right: 10px; }
 
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
+/* Hover effect */
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(255,255,255,1);
   color: black;
-  }
-  background-color: #FAFAFA;
-  width: 100%;
-			}
+}
+
+/* Ensure slideshow-container is relative for absolute positioning */
+.slideshow-container {
+  position: relative;
+}
 
 
 			p {
@@ -425,6 +420,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
