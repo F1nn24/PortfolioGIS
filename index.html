@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -265,11 +265,43 @@ img {vertical-align: middle;}
 	
 		<div id="contentAreaAboutme">
              <p class="redborder" id="fifth">About Me</p> 
-         
-		</div>
-	<div	
-	<p id="fourthbody">I'm passionate about using GIS technology to get the most out of spatial data and to create maps that are both informative and easily accessible. Meeting these two goals are at the forefront of my philosophy on any project, and I strive to deliver a product that is detailed, accurate, and will exceed client expectations every time. Included in this portfolio are a sample of projects that I am particularly proud of.
+        .about-section {
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    gap: 60px;
+    width: 70%;
+    margin: 60px auto;
+}
 
+.about-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 1;
+    text-align: right;
+    font-family: 'Rubik', serif;
+    font-size: 22px;
+    color: #565656;
+} 
+		</div>
+	<div class="about-section">
+  
+  <div class="about-image">
+    <img src="profile.jpg" alt="Profile photo">
+  </div>
+
+  <div class="about-text">
+    <p>
+      I'm passionate about using GIS technology to get the most out of spatial data and to create maps that are both informative and easily accessible. Meeting these two goals are at the forefront of my philosophy on any project, and I strive to deliver a product that is detailed, accurate, and will exceed client expectations every time. Included in this portfolio are a sample of projects that I am particularly proud of.
+    </p>
+  </div>
+
+</div>
 <div id="contentArea2">
              <p class="orangeborder" id="fifth">Fayette County Affordability Study, 2026</p> 
          
@@ -537,3 +569,4 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
