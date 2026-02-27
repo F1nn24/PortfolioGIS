@@ -85,15 +85,17 @@ img {vertical-align: middle;}
 			}
 			#fourthbody {
 			  display: block;
-			  width: 100vw;
+			  width: 80vw; /* or 100vw if you want full width */
 			  max-width: 1300px;
 			  margin: 40px auto;
 			  text-align: center;
 			  color: #565656;
 			  font-size: 25px;
-			  font-family:'Rubik', serif;
+			  font-family: 'Rubik', serif;
 			  padding: 15px;
-			}
+
+			  flex-shrink: 0; /* prevent shrinking inside a flex parent */
+}
 			#fifth {
 				font-family:'Raleway', sans-serif;
 				font-size: 30px;
@@ -139,13 +141,13 @@ img {vertical-align: middle;}
 				
         		}
 			#contentArea2 {
-  			  width: 100%; /* full width */
-  			  display: block; /* remove flex */
-			  margin: auto;
-			  padding: 10px;
-}
+			    margin: auto;
+			    width: 50%;
+			    display: flex;
+			    justify-content: center;
+			    position: relative;
+				}
 
-        		}
 			#contentAreaProjecttitle {
          			height: 150px;
          			width: 400px;
@@ -429,6 +431,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
