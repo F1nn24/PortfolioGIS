@@ -43,7 +43,28 @@ img {vertical-align: middle;}
   position: relative;
 }
 
+/* Make slideshows smaller and centered */
+.slideshow-container {
+  max-width: 800px;   /* smaller max width */
+  width: 90%;         /* responsive */
+  margin: 40px auto;  /* centers the slideshow */
+  position: relative; /* needed for buttons */
+  border-radius: 10px; /* optional rounded edges */
+  overflow: hidden;   /* prevent overflow outside container */
+}
 
+.slideshow-container img {
+  width: 100%;        /* fills container width */
+  height: auto;       /* keeps aspect ratio */
+  display: block;
+}
+
+/* Optional: make it even more mobile-friendly */
+@media (max-width: 600px) {
+  .slideshow-container {
+    width: 95%;
+  }
+}
 			p {
 				font-family: 'Raleway', sans-serif;
         			font-size: 30px;
@@ -420,6 +441,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
