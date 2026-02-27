@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -266,7 +266,22 @@ img {vertical-align: middle;}
 			    color: #565656;
 			}
 				
+			/* Fade-in animation */
+			@keyframes fadeUp {
+		    from {
+		        opacity: 0;
+		        transform: translateY(20px);
+		    }
+		    to {
+ 		       opacity: 1;
+ 		       transform: translateY(0);
+    }
+}
 
+			/* Apply animation */
+				.about-section {
+			    animation: fadeUp 1s ease forwards;
+}
 			}
 }
 
@@ -570,6 +585,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
