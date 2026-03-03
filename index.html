@@ -28,8 +28,13 @@ img {vertical-align: middle;}
 }
 
 /* Left/Right positioning */
-.slideshow-container .prev { left: 20px; }
-.slideshow-container .next { right: 20px; }
+.slideshow-container .prev { 
+  left: -60px;   /* pushes left arrow outside */
+}
+
+.slideshow-container .next { 
+  right: -60px;  /* pushes right arrow outside */
+}
 
 /* Hover effect */
 .slideshow-container .prev:hover,
@@ -436,6 +441,7 @@ function showSlides(n, no) {
 
 </body>
 </html> 
+
 
 
 
